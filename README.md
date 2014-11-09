@@ -10,11 +10,8 @@ Data.One Dataset: http://www.gov.hk/en/theme/psi/datasets/restaurantlicences.htm
 Installation
 ------------
 
-$ pip install -r requirements.txt
-
-$ scrapy startproject LP_Restaurants_Scrapy
-
-$ cd LP_Restaurants_Scrapy
-
-$ scrapy genspider rlxml fehd.gov.hk
+$ pip install -r requirements.txt    
+$ git clone https://github.com/sammyfung/LP_Restaurants_Scrapy    
+$ cd LP_Restaurants_Scrapy/LP_Restaurants_Scrapy    
+$ scrapy crawl rlxml -t json -o -o restaurant_licenses.json    
 
