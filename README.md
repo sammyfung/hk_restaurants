@@ -6,7 +6,6 @@ Food and Environmental Hygiene Department in Hong Kong Government released an [o
 Installation
 ------------
 
-$ pip install -r requirements.txt
 ```
 $ git clone git@github.com:sammyfung/LP_Restaurants_Scrapy.git
 $ cd LP_Restaurants_Scrapy
@@ -15,10 +14,10 @@ $ source venv/bin/activate
 $ pip install -r requirements.txt
 ```
 
-Running
--------
+Quickstart
+----------
 
-Do the web crawling and export into CSV file.
+Run the web crawling and export into CSV file.
 ````
 $ cd LP_Restaurants_Scrapy/LP_Restaurants_Scrapy    
 $ scrapy crawl rlxml -o restaurant_licenses.csv    
