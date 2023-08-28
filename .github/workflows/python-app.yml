@@ -5,6 +5,8 @@ on:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
+  schedule:
+    - cron:  '30 22 1 * *'
 
 permissions:
   contents: read
@@ -25,6 +27,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8 coverage
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        cd LP_Restaurants_Scrapy
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
