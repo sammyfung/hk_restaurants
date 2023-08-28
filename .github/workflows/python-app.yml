@@ -27,7 +27,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8 coverage
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-        cd LP_Restaurants_Scrapy
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
@@ -36,6 +35,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test to list the available scrapers
       run: |
+        cd LP_Restaurants_Scrapy
         coverage run -m scrapy list
     - name: Test the HK-licensed restaurants scraper
       run: |
