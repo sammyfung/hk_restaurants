@@ -18,7 +18,7 @@ Quickstart
 ----------
 
 Run the web crawling and export into CSV file.
-````
+```
 $ cd LP_Restaurants_Scrapy/LP_Restaurants_Scrapy    
 $ scrapy crawl rlxml -o restaurant_licenses.csv    
 ```
