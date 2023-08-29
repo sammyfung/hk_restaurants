@@ -39,7 +39,7 @@ jobs:
       working-directory: LP_Restaurants_Scrapy
     - name: Test the HK-licensed restaurants scraper
       run: |
-        coverage run -m 'scrapy crawl rlxml -o restaurant_licenses.csv' --append
+        coverage run -a -m scrapy crawl rlxml -o restaurant_licenses.csv
       working-directory: LP_Restaurants_Scrapy
     - name: Upload coverage reports to Codecov
       uses: codecov/codecov-action@v3
