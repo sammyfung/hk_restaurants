@@ -2,9 +2,9 @@ name: HK_Lic_Restaurants
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "main" ]
   schedule:
     - cron:  '30 22 1 * *'
 
