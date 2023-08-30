@@ -1,4 +1,4 @@
-[![codecov](https://codecov.io/gh/sammyfung/LP_Restaurants_Scrapy/graph/badge.svg?token=RAN18BUKD6)](https://codecov.io/gh/sammyfung/LP_Restaurants_Scrapy)
+[![codecov](https://codecov.io/gh/sammyfung/HK_Lic_Restaurants/graph/badge.svg?token=RAN18BUKD6)](https://codecov.io/gh/sammyfung/HK_Lic_Restaurants)
 
 Hong Kong Licensed Restaurants Web Scraper
 ==========================================
@@ -11,8 +11,8 @@ Installation
 ------------
 
 ```
-$ git clone git@github.com:sammyfung/LP_Restaurants_Scrapy.git
-$ cd LP_Restaurants_Scrapy
+$ git clone git@github.com:sammyfung/HK_Lic_Restaurants.git
+$ cd HK_Lic_Restaurants
 $ python3 -m venv venv
 $ source venv/bin/activate  
 $ pip install -r requirements.txt
@@ -23,6 +23,6 @@ Quickstart
 
 Run the web scraper and export scraped data to CSV file.
 ```
-$ cd LP_Restaurants_Scrapy/LP_Restaurants_Scrapy    
-$ scrapy crawl rlxml -o restaurant_licenses.csv    
+$ cd HK_Lic_Restaurants/HK_Lic_Restaurants    
+$ scrapy crawl hkrestaurants -o restaurant_licenses.csv    
 ```
