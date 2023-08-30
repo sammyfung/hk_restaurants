@@ -1,7 +1,11 @@
-Scraper of Licensed Restaurants in Hong Kong
-============================================
+[![codecov](https://codecov.io/gh/sammyfung/LP_Restaurants_Scrapy/graph/badge.svg?token=RAN18BUKD6)](https://codecov.io/gh/sammyfung/LP_Restaurants_Scrapy)
 
-Food and Environmental Hygiene Department in Hong Kong Government released an [open data dataset](https://data.gov.hk/en-data/dataset/hk-fehd-fehdlmis-restaurant-licences) (in XML format) contains information of licensed restaurants in Hong Kong. This scraper is written in python, with use of scrapy web scraping framework.
+Hong Kong Licensed Restaurants Web Scraper
+==========================================
+
+Hong Kong Restaurants are licensed by Food and Environmental Hygiene Department in Hong Kong. The department releases an [open data dataset](https://data.gov.hk/en-data/dataset/hk-fehd-fehdlmis-restaurant-licences) of licensees in XML format.
+
+This project uses Scrapy in Python.
 
 Installation
 ------------
@@ -17,7 +21,7 @@ $ pip install -r requirements.txt
 Quickstart
 ----------
 
-Run the web crawling and export into CSV file.
+Run the web scraper and export scraped data to CSV file.
 ```
 $ cd LP_Restaurants_Scrapy/LP_Restaurants_Scrapy    
 $ scrapy crawl rlxml -o restaurant_licenses.csv    

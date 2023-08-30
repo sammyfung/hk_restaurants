@@ -1,4 +1,4 @@
-name: HK licensed restaurants scraper
+name: HK_Lic_Restaurants
 
 on:
   push:
@@ -33,21 +33,21 @@ jobs:
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-    - name: Test to list the available scrapers
+    - name: Test and list the available scrapers
       run: |
         coverage run -m scrapy list
-      working-directory: LP_Restaurants_Scrapy
+      working-directory: HK_Lic_Restaurants
     - name: Test the HK-licensed restaurants scraper
       run: |
-        coverage run -a -m scrapy crawl rlxml -o restaurant_licenses.csv
-      working-directory: LP_Restaurants_Scrapy
+        coverage run -a -m scrapy crawl hkrestaurants -o hk_restaurant_licenses.csv
+      working-directory: HK_Lic_Restaurants
     - name: Generate coverage json report
       run: |
         coverage json
-      working-directory: LP_Restaurants_Scrapy
+      working-directory: HK_Lic_Restaurants
     - name: Upload coverage reports to Codecov
       uses: codecov/codecov-action@v3
       env:
         CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       with:
-        directory: LP_Restaurants_Scrapy
+        directory: HK_Lic_Restaurants

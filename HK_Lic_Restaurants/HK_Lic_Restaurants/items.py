@@ -8,7 +8,7 @@
 import scrapy
 
 
-class CafescrapItem(scrapy.Item):
+class HKRestaurantItem(scrapy.Item):
   type = scrapy.Field()
   district = scrapy.Field()
   num = scrapy.Field()
