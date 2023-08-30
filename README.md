@@ -1,3 +1,4 @@
+[![HK_Lic_Restaurants](https://github.com/sammyfung/HK_Lic_Restaurants/actions/workflows/python-app.yml/badge.svg)](https://github.com/sammyfung/HK_Lic_Restaurants/actions/workflows/python-app.yml)
 [![codecov](https://codecov.io/gh/sammyfung/HK_Lic_Restaurants/graph/badge.svg?token=RAN18BUKD6)](https://codecov.io/gh/sammyfung/HK_Lic_Restaurants)
 
 Hong Kong Licensed Restaurants Web Scraper
