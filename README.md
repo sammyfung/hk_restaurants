@@ -4,7 +4,7 @@
 Hong Kong Restaurants Web Scraper
 ==========================================
 
-This project is aimed to scrape restaurants information from websites. Currently, fehd ([Licensed Restaurant registered with Food and Environmental Hygiene Department in Hong Kong](https://data.gov.hk/en-data/dataset/hk-fehd-fehdlmis-restaurant-licences))is the only spider available in this project.
+This project is aimed to scrape restaurants information from websites. Currently, fehd ([Licensed Restaurants registered with Food and Environmental Hygiene Department in Hong Kong](https://data.gov.hk/en-data/dataset/hk-fehd-fehdlmis-restaurant-licences))is the only spider available in this project.
 
 Installation
 ------------
