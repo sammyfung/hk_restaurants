@@ -39,7 +39,7 @@ jobs:
       working-directory: hk_restaurants
     - name: Test the HK-licensed restaurants scraper
       run: |
-        coverage run -a -m scrapy crawl hkrestaurants -o hk_restaurant_licenses.csv
+        coverage run -a -m scrapy crawl fehd -o hk_restaurant_licenses.csv
       working-directory: hk_restaurants
     - name: Generate coverage json report
       run: |
