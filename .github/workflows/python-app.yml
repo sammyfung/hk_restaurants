@@ -1,4 +1,4 @@
-name: HK_Lic_Restaurants
+name: hk_restaurants
 
 on:
   push:
@@ -36,18 +36,18 @@ jobs:
     - name: Test and list the available scrapers
       run: |
         coverage run -m scrapy list
-      working-directory: HK_Lic_Restaurants
+      working-directory: hk_restaurants
     - name: Test the HK-licensed restaurants scraper
       run: |
         coverage run -a -m scrapy crawl hkrestaurants -o hk_restaurant_licenses.csv
-      working-directory: HK_Lic_Restaurants
+      working-directory: hk_restaurants
     - name: Generate coverage json report
       run: |
         coverage json
-      working-directory: HK_Lic_Restaurants
+      working-directory: hk_restaurants
     - name: Upload coverage reports to Codecov
       uses: codecov/codecov-action@v3
       env:
         CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       with:
-        directory: HK_Lic_Restaurants
+        directory: hk_restaurants
