@@ -16,6 +16,8 @@ class RestaurantItem(scrapy.Item):
   license_no = scrapy.Field()
   name = scrapy.Field()
   address = scrapy.Field()
+  chinese_name = scrapy.Field()
+  chinese_address = scrapy.Field()
   license_code = scrapy.Field()
   license_type = scrapy.Field()
   license_district = scrapy.Field()
